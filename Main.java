@@ -28,27 +28,31 @@ class Main {
     int stan = scaner.nextInt(); scaner.nextLine();
     switch(stan){
     case 1:
-     System.out.println("Podaj imie studenta:");
+     System.out.println("Podaj Imie studenta:");
      String name = scaner.nextLine();
+        
+    System.out.println("Podaj Nazwisko studenta:");
+     String surname = scaner.nextLine();
     
      System.out.println("Podaj wiek studenta:");
     int age = scaner.nextInt();
 
-    s.addStudent(new Student(name ,age));
+    s.addStudent(new Student(name,surname,age));
     break;
 
         
   case 2:
-   
+     var students = s.getStudents();
+      for(Student current : students) {
+       System.out.println(current.ToString());
     break;
+      }
   case 3:
 
     break;
 }
       
-    //  var students = s.getStudents();
-     // for(Student current : students) {
-      //  System.out.println(current.ToString());
+     
       
     } catch (IOException e) {
 
