@@ -18,7 +18,8 @@ class Main {
       //s.addStudent(new Student("Janusz", 40));
 
       
-    
+
+      
       System.out.println("Menu");
       System.out.println("1. Wprowadz Studenta");
       System.out.println("2. Wyswietl Studentow");
