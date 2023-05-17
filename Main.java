@@ -12,6 +12,7 @@ import java.util.Scanner;
 class Main {
   public static void main(String[] args) {
     try {
+      while(true){
       Service s = new Service();
       Scanner scaner = new Scanner(System.in);
       //s.addStudent(new Student("Krzysztof", 20));
@@ -21,9 +22,10 @@ class Main {
 
       
       System.out.println("Menu");
+     System.out.println("0. Koniec programu");
       System.out.println("1. Wprowadz Studenta");
       System.out.println("2. Wyswietl Studentow");
-      System.out.println("3. Modyfikuj studenta");
+     
       
     int stan = scaner.nextInt(); scaner.nextLine();
     switch(stan){
@@ -33,11 +35,16 @@ class Main {
         
     System.out.println("Podaj Nazwisko studenta:");
      String surname = scaner.nextLine();
-    
+        
+   System.out.println("Podaj date urodzenia:");
+    String birth = scaner.nextLine();
+        
      System.out.println("Podaj wiek studenta:");
     int age = scaner.nextInt();
 
-    s.addStudent(new Student(name,surname,age));
+
+
+    s.addStudent(new Student(name,surname,age, birth));
     break;
 
         
@@ -45,13 +52,15 @@ class Main {
      var students = s.getStudents();
       for(Student current : students) {
        System.out.println(current.ToString());
-    break;
       }
-  case 3:
-
     break;
-}
       
+  case 0:
+ return;
+        
+  
+}
+      }     
      
       
     } catch (IOException e) {

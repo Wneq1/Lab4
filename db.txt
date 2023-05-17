@@ -1,4 +1,11 @@
-Krzysztof 20
-Janusz 40
-Kuba 12
-Jan Kowalski 44
+Krzysztof 20  
+Janusz 40  
+Kuba 12   
+Jan Kowalski 44   
+Mariusz Wiadro 68  zzsww 
+WAS Das 22  zss
+Jan KOwal 12 wssasd
+JJ KK 55 awdsdad
+Mario Maslo 44 12.2,3
+test test 1 12.23.5
+testowy testowy2 77 12.54.21
