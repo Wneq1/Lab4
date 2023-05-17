@@ -35,7 +35,8 @@ class Main {
 
     s.addStudent(new Student(name ,age));
     break;
-    
+
+        
   case 2:
    
     break;
