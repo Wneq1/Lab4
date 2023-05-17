@@ -38,16 +38,21 @@ class Main {
 
         
   case 2:
-   
+        System.out.println("Studenci");
+      var students = s.getStudents();
+      for(Student current : students) {
+        System.out.println(current.ToString());
+      }
     break;
+        
   case 3:
+  System.out.println("Modyfikuj studenta");
 
+        
     break;
 }
       
-    //  var students = s.getStudents();
-     // for(Student current : students) {
-      //  System.out.println(current.ToString());
+      
       
     } catch (IOException e) {
 
